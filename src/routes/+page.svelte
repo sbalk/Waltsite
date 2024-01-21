@@ -92,3 +92,10 @@
 
 
 </style>
+
+
+<!-- https://svelte.dev/repl/218a65f83c2b4b4c8f10a253587d6c1b?version=4.2.9
+https://kit.svelte.dev/docs/page-options
+https://codepen.io/matteobruni/pen/NWrEOzQ
+https://svelte.dev/repl/2f5ca1b9da90406cbe6678791193f0d4?version=3.20.1
+https://stackoverflow.com/questions/70456275/two-scrollbars-after-adding-scroll-affect-in-css-and-svelte -->
