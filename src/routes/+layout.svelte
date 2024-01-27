@@ -33,4 +33,13 @@
 		bottom: 50px;
 		right: 50px;
 	}
+
+	:global(body) {
+		background-size: 60px 60px;
+		background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+
+		/* background-size: 40px 40px;
+		background-image: linear-gradient(to right, grey 1px, transparent 1px),
+			linear-gradient(to bottom, grey 1px, transparent 1px); */
+	}
 </style>
