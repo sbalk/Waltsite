@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 	import { loadSlim } from '@tsparticles/slim'; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-
+	import { base } from '$app/paths';
 	let ParticlesComponent;
 
 	onMount(async () => {
@@ -68,12 +68,12 @@
 /> -->
 
 <div class="image-container">
-    <img src="/path234.svg" alt="Your Image" usemap="#image-map">
+    <img src="{base}/path234.svg" alt="Your Image" usemap="#image-map">
 
     <map name="image-map">
-        <area target="_self" alt="DesignPage" title="DesignPage" href="/DesignPage" coords="34,44,270,350" shape="rect">
-        <area target="_self" alt="VisualizationPage" title="VisualizationPage" href="/VisualizationPage" coords="290,172,333,250" shape="circle">
-        <area target="_self" alt="ArtPage" title="ArtPage" href="/ArtPage" coords="345,58,406,130,373,204" shape="poly">
+        <area target="_self" alt="DesignPage" title="DesignPage" href="{base}/DesignPage" coords="34,44,270,350" shape="rect">
+        <area target="_self" alt="VisualizationPage" title="VisualizationPage" href="{base}/VisualizationPage" coords="290,172,333,250" shape="circle">
+        <area target="_self" alt="ArtPage" title="ArtPage" href="{base}/ArtPage" coords="345,58,406,130,373,204" shape="poly">
     </map>
 </div>
 

@@ -1,20 +1,18 @@
 <script>
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 </script>
 
-<div class="scroll-container">
+<!-- <div class="scroll-container">
 	<section class="scroll-section" on:click={() => goto('/DesignPage/DesignProject1')}>
 		<h1 class="centered-content">Design Page - Section 1</h1>
-		<!-- Add your content for the first section here -->
 	</section>
 
 	<section class="scroll-section" on:click={() => goto('/DesignPage/DesignProject2')}>
 		<h1 class = "centered-content">Design Page - Section 2</h1>
-		<!-- Add your content for the second section here -->
 	</section>
 
-	<!-- Add more sections as needed -->
-</div>
+</div> -->
 
 <style>
 	.scroll-container {
