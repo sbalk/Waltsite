@@ -1,13 +1,14 @@
 <script>
+	import { base } from '$app/paths';
 	// Add your JavaScript here
 </script>
 
-<a href="/" class="home-button">
+<a href="{base}/" class="home-button">
 	<img src="/path234.svg" alt="Home" />
 </a>
 
 <a href="mailto:example@example.com" class="email-button">
-	<img src="/ster.svg" alt="email" width="30px" height="30px"/>
+	<img src="/ster.svg" alt="email" width="30px" height="30px" />
 </a>
 
 <slot />
