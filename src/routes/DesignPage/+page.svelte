@@ -1,27 +1,28 @@
 <script>
-	export let data;
 	import { base } from '$app/paths';
-	import img_src from '$lib/design1.jpg';
+	import img1 from '$lib/design1.jpg';
+	import img2 from '$lib/design2.jpg';
+	import img3 from '$lib/design3.jpg';
 </script>
 
 <h1>Design page</h1>
 
-<!-- <ul>
-	{#each data.summaries as { design_project, title }}
-		<li><a href="{base}/DesignPage/{design_project}">{title}</a></li>
-	{/each}
-</ul> -->
-
 <div class="scroll-container">
-{#each data.summaries as { design_project, title, img_fname }}
 	<div class="scroll-div">
-		<a href="{base}/DesignPage/{design_project}">
-			<!-- <h1>{title}</h1> -->
-			<!-- <img class="image" src={img_fname} alt="asdf" /> -->
-			<img class="image" src={img_src} alt="asdf" />
+		<a href="{base}/DesignPage/cncptmoto">
+			<img class="image" src={img1} alt="asdf" />
 		</a>
 	</div>
-{/each}
+	<div class="scroll-div">
+		<a href="{base}/DesignPage/cncptmoto">
+			<img class="image" src={img2} alt="asdf" />
+		</a>
+	</div>
+	<div class="scroll-div">
+		<a href="{base}/DesignPage/cncptmoto">
+			<img class="image" src={img3} alt="asdf" />
+		</a>
+	</div>
 </div>
 
 
