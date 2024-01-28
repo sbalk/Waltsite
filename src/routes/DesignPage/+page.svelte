@@ -11,8 +11,10 @@
 <div class="scroll-container">
 	<div class="scroll-div">
 		<div class="text-div">
-			<h1>Design</h1>
-			<p>Design is fucking awesome and if you don't pay me a ton of money for some bla bla</p>
+			<div class="text-block">
+				<h1>Design</h1>
+				<p>Design is fucking awesome and if you don't pay me a ton of money for some bla bla</p>
+			</div>
 		</div>
 	</div>
 	<div class="scroll-div">
@@ -32,9 +34,11 @@
 	</div>
 	<div class="scroll-div">
 		<div class="text-div">
-			<h1>Contact</h1>
-			<p>Contact me I'm a designer, I'm also a fish stick</p>
-			<img class="walt" src={walt} alt="asdf" />
+			<div class="text-block">
+				<h1>Contact</h1>
+				<p>Contact me, I'm a great designer, I'm also a great fish stick</p>
+				<img class="walt" src={walt} alt="asdf" />
+			</div>
 		</div>
 	</div>
 </div>
@@ -58,6 +62,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		height: 60vh;
+	}
+	.text-block{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: left;
 		height: 60vh;
 	}
 	.image {

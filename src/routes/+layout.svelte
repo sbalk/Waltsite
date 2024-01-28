@@ -1,30 +1,31 @@
 <script>
 	import { base } from '$app/paths';
+	// import triangle from '$lib/Triangle_Menu_v1.webp';
+	import ster from '$lib/ContactStar_v1.webp';
+	import logo from '$lib/Logo_v1.webp';
 	// Add your JavaScript here
 </script>
 
 <a href="{base}/" class="home-button">
-	<img src="{base}/path234.svg" alt="Home" />
+	<img src={logo} alt="Home" />
 </a>
-
 
 <slot />
 
-
 <a href="mailto:example@example.com" class="email-button">
-	<img src="{base}/ster.svg" alt="email" width="30px" height="30px" />
+	<img src={ster} alt="email" width="30px" height="30px" />
 </a>
 
 <style>
 	/* Add your styles here */
 	.home-button {
 		position: absolute;
-		top: 10px;
-		left: 10px;
+		top: 20px;
+		left: 20px;
 	}
 	.home-button img {
-		width: 30%;
-		height: 30%;
+		width: 60%;
+		height: 60%;
 	}
 	/* .email-button img {
 		width: 10%;

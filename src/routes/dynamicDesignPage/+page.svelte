@@ -7,15 +7,13 @@
 <h1>Design page</h1>
 
 <div class="scroll-container">
-{#each data.summaries as { design_project, title, img_fname }}
+<!-- {#each data.summaries as { design_project, title, img_fname }}
 	<div class="scroll-div">
 		<a href="{base}/DesignPage/{design_project}">
-			<!-- <h1>{title}</h1> -->
-			<!-- <img class="image" src={img_fname} alt="asdf" /> -->
 			<img class="image" src={img_src} alt="asdf" />
 		</a>
 	</div>
-{/each}
+{/each} -->
 </div>
 
 

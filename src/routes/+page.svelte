@@ -1,4 +1,6 @@
 <script>
+	
+	import triangle from '$lib/Triangle_Menu_v1.webp';
 	import { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
 	//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
@@ -68,7 +70,7 @@
 /> -->
 
 <div class="image-container">
-    <img src="{base}/path234.svg" alt="Your Image" usemap="#image-map">
+    <img class="triangle" src={triangle} alt="Your Image" usemap="#image-map">
 
     <map name="image-map">
         <area target="_self" alt="DesignPage" title="DesignPage" href="{base}/DesignPage" coords="34,44,270,350" shape="rect">
@@ -86,7 +88,8 @@
         height: 100vh;
     }
 
-	.shape {
+	.triangle {
+		width: 60vh;
 		/* Style your shapes here */
 	}
 
