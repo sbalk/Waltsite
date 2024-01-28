@@ -1,6 +1,6 @@
 <script>
 	import { base } from '$app/paths';
-	import img1 from '$lib/design1.jpg';
+	// import img1 from '{base}/lib/design1.jpg';
 	import img2 from '$lib/design2.jpg';
 	import img3 from '$lib/design3.jpg';
 	import walt from '$lib/walt.png';
@@ -19,12 +19,14 @@
 	</div>
 	<div class="scroll-div">
 		<a href="{base}/DesignPage/cncptmoto">
-			<img class="image" src={img1} alt="asdf" />
+			<img class="image" src='{base}/design1.jpg' alt="asdf" />
+			<!-- <img class="image" src={img1} alt="asdf" /> -->
 		</a>
 	</div>
 	<div class="scroll-div">
 		<a href="{base}/DesignPage/cncptmoto">
 			<img class="image" src={img2} alt="asdf" />
+			<!-- <img class="image" src={img2} alt="asdf" /> -->
 		</a>
 	</div>
 	<div class="scroll-div">
