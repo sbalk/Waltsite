@@ -7,13 +7,13 @@
 </script>
 
 <a href="{base}/" class="home-button">
-	<img src={logo} alt="Home" />
+	<img src="{base}/Logo_v1.webp" alt="Home" />
 </a>
 
 <slot />
 
-<a href="mailto:example@example.com" class="email-button">
-	<img src={ster} alt="email" width="30px" height="30px" />
+<a href="mailto:walt@example.com" class="email-button">
+	<img src="{base}/ContactStar_v1.webp" alt="email" width="30px" height="30px" />
 </a>
 
 <style>

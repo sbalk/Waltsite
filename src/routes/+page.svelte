@@ -69,7 +69,7 @@
 /> -->
 
 <div class="image-container">
-	<img class="triangle" src={triangle} alt="asdf" usemap="#image-map" />
+	<img class="triangle" src="{base}/Triangle_Menu_v1.webp" alt="asdf" usemap="#image-map" />
 
 	<map name="image-map">
 		<area
