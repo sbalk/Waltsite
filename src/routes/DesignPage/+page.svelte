@@ -3,6 +3,7 @@
 	// import img1 from '{base}/lib/design1.jpg';
 	import img2 from '$lib/design2.jpg';
 	import img3 from '$lib/design3.jpg';
+	import img4 from '$lib/design4.jpg';
 	import walt from '$lib/walt.png';
 </script>
 
@@ -13,7 +14,7 @@
 		<div class="text-div">
 			<div class="text-block">
 				<h1>Design</h1>
-				<p>Design is fucking awesome and if you don't pay me a ton of money for some bla bla</p>
+				<p>Design is fucking awesome and if you don't pay me a ton of money for some services I'll find out where you live and stab your eyes out. Look at the following projects while you still can.</p>
 			</div>
 		</div>
 	</div>
@@ -26,7 +27,6 @@
 	<div class="scroll-div">
 		<a href="{base}/DesignPage/cncptmoto">
 			<img class="image" src={img2} alt="asdf" />
-			<!-- <img class="image" src={img2} alt="asdf" /> -->
 		</a>
 	</div>
 	<div class="scroll-div">
@@ -35,11 +35,17 @@
 		</a>
 	</div>
 	<div class="scroll-div">
+		<a href="{base}/DesignPage/cncptmoto">
+			<img class="image" src={img4} alt="asdf" />
+		</a>
+	</div>
+	<div class="scroll-div">
 		<div class="text-div">
 			<div class="text-block">
 				<h1>Contact</h1>
-				<p>Contact me, I'm a great designer, I'm also a great fish stick</p>
-				<img class="walt" src={walt} alt="asdf" />
+				<p>PENLords agency</p>
+				<p>tel: 0031 6 12341234</p>
+				<p>mail: penloards@penloards.com</p>
 			</div>
 		</div>
 	</div>
