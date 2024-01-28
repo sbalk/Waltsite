@@ -1,39 +1,49 @@
 <script>
-	import { goto } from '$app/navigation';
+	export let data;
 	import { base } from '$app/paths';
+	import img_src from '$lib/design1.jpg';
 </script>
 
-<!-- <div class="scroll-container">
-	<section class="scroll-section" on:click={() => goto('/DesignPage/DesignProject1')}>
-		<h1 class="centered-content">Design Page - Section 1</h1>
-	</section>
+<h1>Design page</h1>
 
-	<section class="scroll-section" on:click={() => goto('/DesignPage/DesignProject2')}>
-		<h1 class = "centered-content">Design Page - Section 2</h1>
-	</section>
+<!-- <ul>
+	{#each data.summaries as { design_project, title }}
+		<li><a href="{base}/DesignPage/{design_project}">{title}</a></li>
+	{/each}
+</ul> -->
 
-</div> -->
+<div class="scroll-container">
+{#each data.summaries as { design_project, title, img_fname }}
+	<div class="scroll-div">
+		<a href="{base}/DesignPage/{design_project}">
+			<!-- <h1>{title}</h1> -->
+			<!-- <img class="image" src={img_fname} alt="asdf" /> -->
+			<img class="image" src={img_src} alt="asdf" />
+		</a>
+	</div>
+{/each}
+</div>
+
 
 <style>
 	.scroll-container {
-		height: 100vh;
+		height: 80vh;
 		overflow-y: scroll;
 		scroll-snap-type: y mandatory;
 	}
-
-	.scroll-section {
-		height: 100vh;
+	.scroll-div {
+		height: 80vh;
 		scroll-snap-align: start;
-		cursor: pointer; /* Change the cursor to a hand when hovering over a section */
+		cursor: pointer;
 	}
-
-	.centered-content {
+	.image {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		height: 60vh;
 	}
-
-
-	/* Your existing styles here */
+	:global(body) {
+        margin: 0;
+        padding: 0;
+    }
 </style>

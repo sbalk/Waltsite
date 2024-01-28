@@ -7,11 +7,13 @@
 	<img src="{base}/path234.svg" alt="Home" />
 </a>
 
+
+<slot />
+
+
 <a href="mailto:example@example.com" class="email-button">
 	<img src="{base}/ster.svg" alt="email" width="30px" height="30px" />
 </a>
-
-<slot />
 
 <style>
 	/* Add your styles here */
