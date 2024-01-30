@@ -22,8 +22,8 @@
 		</a>
 	</div>
 	<div class="scroll-div">
-		<a href="{base}/DesignPage/cncptmoto">
-			<img class="image" src="{base}/design2.jpg" alt="asdf" />
+		<a href="{base}/DesignPage/ebike">
+			<img class="image" src="{base}/Design/design-ebike-main.jpg" alt="asdf" />
 		</a>
 	</div>
 	<div class="scroll-div">

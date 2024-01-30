@@ -1,5 +1,4 @@
 <script>
-	import triangle from '$lib/Triangle_Menu_v1.webp';
 	import { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
 	//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
