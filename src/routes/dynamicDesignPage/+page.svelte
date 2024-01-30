@@ -1,7 +1,6 @@
 <script>
 	export let data;
 	import { base } from '$app/paths';
-	import img_src from '$lib/design1.jpg';
 </script>
 
 <h1>Design page</h1>

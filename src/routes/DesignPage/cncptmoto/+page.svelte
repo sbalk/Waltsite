@@ -16,6 +16,11 @@
 	onMount(() => {});
 </script>
 
+<!-- poepgat horizontaal scrollen -->
+<!-- https://stackoverflow.com/questions/73987081/scroll-to-bottom-of-element-in-sveltekit -->
+<!-- https://github.com/bartholomej/svelte-scrollto-element -->
+
+
 <div bind:this={element} class="scroll-container">
 	<img class="image" src="{base}/sub_project1.jpg" alt="asdf" />
 </div>
