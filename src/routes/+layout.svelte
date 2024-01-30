@@ -1,9 +1,5 @@
 <script>
 	import { base } from '$app/paths';
-	// import triangle from '$lib/Triangle_Menu_v1.webp';
-	import ster from '$lib/ContactStar_v1.webp';
-	import logo from '$lib/Logo_v1.webp';
-	// Add your JavaScript here
 </script>
 
 <a href="{base}/" class="home-button">
@@ -17,9 +13,8 @@
 </a>
 
 <style>
-	/* Add your styles here */
 	.home-button {
-		position: absolute;
+		position: fixed;
 		top: 20px;
 		left: 20px;
 	}
@@ -27,12 +22,8 @@
 		width: 60%;
 		height: 60%;
 	}
-	/* .email-button img {
-		width: 10%;
-		height: 10%;
-	} */
 	.email-button {
-		position: absolute;
+		position: fixed;
 		bottom: 50px;
 		right: 50px;
 	}

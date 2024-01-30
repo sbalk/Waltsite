@@ -1,13 +1,6 @@
 <script>
 	import { base } from '$app/paths';
-	// import img1 from '{base}/lib/design1.jpg';
-	// import img2 from '$lib/design2.jpg';
-	// import img3 from '$lib/design3.jpg';
-	// import img4 from '$lib/design4.jpg';
-	// import walt from '$lib/walt.png';
 </script>
-
-<!-- <h1>Design page</h1> -->
 
 <div class="scroll-container">
 	<div class="scroll-div">

@@ -59,6 +59,7 @@
 	options={particlesConfig}
 	on:particlesLoaded={onParticlesLoaded}
 />
+
 <!-- <svelte:component
 	this="{ParticlesComponent}"
 	id="tsparticles"
