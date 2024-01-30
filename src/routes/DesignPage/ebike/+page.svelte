@@ -9,7 +9,7 @@
 		console.log(Math.round(element.scrollWidth * Math.random()));
 	});
 	const scrollToRight = async (node) => {
-		node.scroll({ left: Math.round(element.scrollWidth * Math.random()) / 10, behavior: 'smooth' });
+		node.scroll({ left: Math.round(element.scrollWidth * Math.random()), behavior: 'smooth' });
 	};
 
 	onMount(() => {});
@@ -41,7 +41,7 @@
 	.bottom-text {
 		position: absolute;
 		top: 70vh;
-		left: 20vw;
+		left: 15vw;
 		height: 60vh;
 		width: 40vh;
 	}
