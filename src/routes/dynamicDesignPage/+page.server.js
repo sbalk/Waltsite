@@ -3,9 +3,9 @@ import { posts } from './data.js';
 export function load() {
 	return {
 		summaries: posts.map((prjct) => ({
-			design_project: prjct.design_project,
+			slug: prjct.slug,
 			title: prjct.title,
-			image: prjct.img_fname
+			img_fname: prjct.img_fname
 		}))
 	};
 }

@@ -32,8 +32,6 @@
 
 <style>
 	.title {
-		/* font-size: 3rem;
-        font-weight: 700; */
 		position: absolute;
 		top: 15vh;
 		left: 50vw;

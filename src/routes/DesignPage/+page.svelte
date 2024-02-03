@@ -17,13 +17,13 @@
 	</div>
 	<div class="scroll-div">
 		<a href="{base}/DesignPage/cncptmoto">
-			<img class="image" src="{base}/design1.jpg" alt="asdf" />
+			<img class="image" src="{base}/main-cncptmoto.jpg" alt="asdf" />
 			<!-- <img class="image" src={img1} alt="asdf" /> -->
 		</a>
 	</div>
 	<div class="scroll-div">
 		<a href="{base}/DesignPage/ebike">
-			<img class="image" src="{base}/Design/design-ebike-main.jpg" alt="asdf" />
+			<img class="image" src="{base}/Design/main-ebike.jpg" alt="asdf" />
 		</a>
 	</div>
 	<div class="scroll-div">
