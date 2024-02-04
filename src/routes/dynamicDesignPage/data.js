@@ -2,23 +2,26 @@ export const posts = [
 	{
 		slug: 'cncptmoto',
 		img_fname: 'main-cncptmoto',
-		title: 'Welcome to the Aperture Science computer-aided enrichment center',
+		banner_img: 'banner-ebike',
+		title: 'CONCEPTMOTO',
 		content:
-			'<p>We hope your brief detention in the relaxation vault has been a pleasant one.</p><p>Your specimen has been processed and we are now ready to begin the test proper.</p>'
+			'The goal of this project was to develop a future context understanding, a vision on what to add to this context an the characteristics to achieve the desired effects with a design. Ultimately to develop a concept in accordance with this vision and characteristics, and to deliver a functional prototype.'
 	},
-
 	{
 		slug: 'ebike',
 		img_fname: 'main-ebike',
-		title: 'Safety notice',
+		banner_img: 'banner-ebike',
+		title: 'VANMOOF PROTO 3000',
 		content:
-			'<p>While safety is one of many Enrichment Center Goals, the Aperture Science High Energy Pellet, seen to the left of the chamber, can and has caused permanent disabilities, such as vaporization. Please be careful.</p>'
+			'The goal of this project was to develop a future context understanding, a vision on what to add to this context an the characteristics to achieve the desired effects with a design. Ultimately to develop a concept in accordance with this vision and characteristics, and to deliver a functional prototype.'
 	},
 
 	{
 		slug: 'interiordesign',
 		img_fname: 'main-cncptmoto',
-		title: 'This was a triumph',
-		content: "<p>I'm making a note here: HUGE SUCCESS.</p>"
+		banner_img: 'banner-ebike',
+		title: 'Wild Walt interiors',
+		content:
+			'The goal of this project was to develop a future context understanding, a vision on what to add to this context an the characteristics to achieve the desired effects with a design. Ultimately to develop a concept in accordance with this vision and characteristics, and to deliver a functional prototype.'
 	}
 ];

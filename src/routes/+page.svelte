@@ -60,7 +60,7 @@
 			target="_self"
 			alt="DesignPage"
 			title="DesignPage"
-			href="{base}/DesignPage"
+			href="{base}/dynamicDesignPage"
 			coords="34,44,270,350"
 			shape="rect"
 		/>

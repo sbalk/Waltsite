@@ -1,20 +1,51 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	// import { onMount } from 'svelte';
 	export let data;
-	// let element;
 
-	// onMount(() => {
-	// 	scrollToRight(element);
-	// 	console.log(element.scrollWidth);
-	// 	console.log(Math.round(element.scrollWidth * Math.random()));
-	// });
-	// const scrollToRight = async (node) => {
-	// 	node.scroll({ left: Math.round(element.scrollWidth * Math.random()), behavior: 'smooth' });
-	// };
-
-	// onMount(() => {});
+	import { particlesInit } from '@tsparticles/svelte';
+	import { onMount } from 'svelte';
+	import { loadSlim } from '@tsparticles/slim';
+	let ParticlesDesignComponent;
+	onMount(async () => {
+		const module = await import('@tsparticles/svelte');
+		ParticlesDesignComponent = module.default;
+	});
+	let particlesDesignConfig = {
+		particles: {
+			color: {
+				value: '#000'
+			},
+			links: {
+				enable: false,
+				color: '#000'
+			},
+			move: {
+				enable: true
+			},
+			number: {
+				value: 3
+			},
+			size: {
+				value: { min: 2, max: 2 }
+			}
+		}
+	};
+	let onParticlesLoaded = (event) => {
+		const particlesContainer = event.detail.particles;
+	};
+	void particlesInit(async (engine) => {
+		await loadSlim(engine);
+	});
 </script>
+
+<svelte:component
+	this={ParticlesDesignComponent}
+	id="tsparticles"
+	class=""
+	style=""
+	options={particlesDesignConfig}
+	on:particlesLoaded={onParticlesLoaded}
+/>
 
 <div class="scroll-container" style="position:relative;z-index:5">
 	<div class="scroll-div">
@@ -32,8 +63,7 @@
 
 	{#each data.summaries as { slug, title, img_fname }}
 		<div class="scroll-div">
-			<a href="{base}/DesignPage/{slug}">
-				<!-- <img class="image" src="{base}/Design/main-ebike.jpg" alt="asdf" /> -->
+			<a href="{base}/dynamicDesignPage/{slug}">
 				<img class="image" src="{base}/Design/{img_fname}.jpg" alt="asdf" />
 			</a>
 		</div>
