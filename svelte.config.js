@@ -14,10 +14,34 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 
+		// prerender: {
+		// 	concurrency: 1,
+		// 	crawl: true,
+		// 	entries: ['/dynamicDesignPage/cncptmoto', '/dynamicDesignPage/ebike']
+		// },
+
+		prerender: {
+			// use relative URLs similar to an anchor tag <a href="/test/1"></a>
+			// do not include group layout folders in the path such as /(group)/test/1
+			// entries: [
+			// '/dynamicDesignPage/cncptmoto',
+			// '/dynamicDesignPage/ebike',
+			// '/dynamicDesignPage/interiordesign'
+			// ]
+
+			entries: [
+				'*',
+				'/',
+				'/dynamicDesignPage/cncptmoto',
+				'/dynamicDesignPage/ebike',
+				'/dynamicDesignPage/interiordesign'
+			]
+		},
+
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 			// base: process.env.NODE_ENV === 'production' ? '/sbalk' : ''
-		},
+		}
 	}
 };
 

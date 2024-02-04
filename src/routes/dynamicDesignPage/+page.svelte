@@ -1,22 +1,22 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 	export let data;
-	let element;
+	// let element;
 
-	onMount(() => {
-		scrollToRight(element);
-		console.log(element.scrollWidth);
-		console.log(Math.round(element.scrollWidth * Math.random()));
-	});
-	const scrollToRight = async (node) => {
-		node.scroll({ left: Math.round(element.scrollWidth * Math.random()), behavior: 'smooth' });
-	};
+	// onMount(() => {
+	// 	scrollToRight(element);
+	// 	console.log(element.scrollWidth);
+	// 	console.log(Math.round(element.scrollWidth * Math.random()));
+	// });
+	// const scrollToRight = async (node) => {
+	// 	node.scroll({ left: Math.round(element.scrollWidth * Math.random()), behavior: 'smooth' });
+	// };
 
-	onMount(() => {});
+	// onMount(() => {});
 </script>
 
-<div class="scroll-container">
+<div class="scroll-container" style="position:relative;z-index:5">
 	<div class="scroll-div">
 		<div class="text-div">
 			<div class="text-block">
@@ -31,7 +31,7 @@
 	</div>
 
 	{#each data.summaries as { slug, title, img_fname }}
-		<div bind:this={element} class="scroll-div">
+		<div class="scroll-div">
 			<a href="{base}/DesignPage/{slug}">
 				<!-- <img class="image" src="{base}/Design/main-ebike.jpg" alt="asdf" /> -->
 				<img class="image" src="{base}/Design/{img_fname}.jpg" alt="asdf" />
@@ -47,7 +47,6 @@
 	ccordance with this vision and characteristics, and to deliver a functional
 	prototype
 </p> -->
-
 
 <style>
 	.scroll-container {
