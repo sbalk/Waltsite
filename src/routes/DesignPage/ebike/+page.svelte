@@ -17,9 +17,9 @@
 
 <h1 class="title">VANMOOF PROTO 3000</h1>
 
-<div class="scroll-container">
+<div class="scroll-container" style="position:relative;z-index:5">
 	<div bind:this={element} class="scroll-image">
-		<img class="image" src="{base}/Design/design-ebike-banner.jpg" alt="asdf" />
+		<img class="image" src="{base}/Design/banner-ebike.jpg" alt="asdf" />
 	</div>
 </div>
 
@@ -40,7 +40,6 @@
 		position: absolute;
 		top: 70vh;
 		left: 15vw;
-		height: 60vh;
 		width: 40vh;
 	}
 	.scroll-container {

@@ -1,8 +1,58 @@
 <script>
 	import { base } from '$app/paths';
+
+	import { particlesInit } from '@tsparticles/svelte';
+	import { onMount } from 'svelte';
+	import { loadSlim } from '@tsparticles/slim';
+	let ParticlesComponent;
+	onMount(async () => {
+		const module = await import('@tsparticles/svelte');
+		ParticlesComponent = module.default;
+	});
+
+	// let particlesUrl =
+	// 	'https://raw.githubusercontent.com/tsparticles/svelte-auth-template/40faa2d5a3806459533a5c61a5e362561881bd86/src/particles.json'; // placeholder, replace it with a real url
+
+	let particlesConfig = {
+		particles: {
+			color: {
+				value: '#000'
+			},
+			links: {
+				enable: false,
+				color: '#000'
+			},
+			move: {
+				enable: true
+			},
+			number: {
+				value: 2
+			},
+			size: {
+				value: { min: 2, max: 2 }
+			}
+		}
+	};
+
+	let onParticlesLoaded = (event) => {
+		const particlesContainer = event.detail.particles;
+	};
+
+	void particlesInit(async (engine) => {
+		await loadSlim(engine);
+	});
 </script>
 
-<div class="scroll-container">
+<!-- <svelte:component
+	this={ParticlesComponent}
+	id="tsparticles"
+	class="put your classes here"
+	style=""
+	options={particlesConfig}
+	on:particlesLoaded={onParticlesLoaded}
+/> -->
+
+<div class="scroll-container" style="position:relative;z-index:5">
 	<div class="scroll-div">
 		<div class="text-div">
 			<div class="text-block">
@@ -17,7 +67,7 @@
 	</div>
 	<div class="scroll-div">
 		<a href="{base}/DesignPage/cncptmoto">
-			<img class="image" src="{base}/main-cncptmoto.jpg" alt="asdf" />
+			<img class="image" src="{base}/Design/main-cncptmoto.jpg" alt="asdf" />
 			<!-- <img class="image" src={img1} alt="asdf" /> -->
 		</a>
 	</div>
