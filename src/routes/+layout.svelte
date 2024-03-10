@@ -3,6 +3,22 @@
 	// import Navbar from '$components/Navbar.svelte';
 	import '../app.css';
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+	// add a function that takes the width of the pages and devides it by 60, rounds down that number and then devides the page width by that number
+	function calcHorDots() {
+		let pageWidth = window.innerWidth;
+		let dots = Math.floor(pageWidth / 60);
+		let scale = 1 / dots;
+		return scale;
+	}
+	function calcVerDots() {
+		let pageHeight = window.innerHeight;
+		let dots = Math.floor(pageHeight / 60);
+		let scale = 1 / dots;
+		return scale;
+	}
+
+	$: horDots = calcHorDots();
+	$: verDots = calcVerDots();
 </script>
 
 <div class="relative px-8">
@@ -53,7 +69,8 @@
 	} */
 
 	:global(body) {
-		background-size: 5vw 60px;
+		background-size: {horDots}vw {verDots}vh;
+		background-position: center center;
 		background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 0px);
 	}
 </style>

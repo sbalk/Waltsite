@@ -97,6 +97,7 @@
 		align-items: center;
 		height: 70vh;
 		scroll-snap-align: center;
+		overflow: hidden;
 	}
 	.text-div {
 		display: flex;
@@ -118,6 +119,7 @@
 		justify-content: center;
 		align-items: center;
 		height: 70vh;
+		object-fit: contain;
 		cursor: pointer;
 	}
 	:global(body) {
