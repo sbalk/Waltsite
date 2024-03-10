@@ -69,7 +69,7 @@
 	} */
 
 	:global(body) {
-		background-size: {horDots}vw {verDots}vh;
+		background-size: 5vw 10vh;
 		background-position: center center;
 		background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 0px);
 	}
