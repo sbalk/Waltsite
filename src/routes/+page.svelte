@@ -29,7 +29,7 @@
 				value: 50
 			},
 			size: {
-				value: { min: 2, max: 2 }
+				value: { min: 1, max: 1 }
 			}
 		}
 	};

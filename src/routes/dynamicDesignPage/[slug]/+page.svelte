@@ -1,4 +1,5 @@
 <script lang="ts">
+	console.log('test');
 	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	export let data;
@@ -23,7 +24,12 @@
 
 <div class="scroll-container" style="position:relative;z-index:5">
 	<div bind:this={element} class="scroll-image">
-		<img class="image" src="{base}/Design/{data.post.banner_img}.jpg" alt="asdf" />
+		<!-- https://www.reddit.com/r/sveltejs/comments/v8owzc/is_it_possible_to_get_a_list_of_images_from_a/ -->
+		<img class="image" src="{base}/DesignPage/{data.post.img_fname}/1.png" alt="asdf" />
+		<img class="image" src="{base}/DesignPage/{data.post.img_fname}/2.png" alt="asdf" />
+		<img class="image" src="{base}/DesignPage/{data.post.img_fname}/3.png" alt="asdf" />
+		<img class="image" src="{base}/DesignPage/{data.post.img_fname}/4.png" alt="asdf" />
+		<img class="image" src="{base}/DesignPage/{data.post.img_fname}/5.png" alt="asdf" />
 	</div>
 </div>
 
@@ -32,6 +38,11 @@
 </p>
 
 <style>
+	.scroll-image {
+		display: flex; /* Use flexbox to align images horizontally */
+		overflow-x: auto; /* Enable horizontal scrolling if images overflow */
+		white-space: nowrap; /* Prevent images from wrapping to the next line */
+	}
 	.title {
 		position: absolute;
 		top: 15vh;

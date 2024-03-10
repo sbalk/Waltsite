@@ -7,7 +7,7 @@ const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-
+	// optimizeDeps: { include: ['fs'], exclude: ['pg-native'] },
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
@@ -31,10 +31,11 @@ const config = {
 
 			entries: [
 				'*',
-				'/',
-				'/dynamicDesignPage/cncptmoto',
-				'/dynamicDesignPage/ebike',
-				'/dynamicDesignPage/interiordesign'
+				'/'
+				// '/components'
+				// '/dynamicDesignPage/cncptmoto',
+				// '/dynamicDesignPage/ebike',
+				// '/dynamicDesignPage/interiordesign',
 			]
 		},
 

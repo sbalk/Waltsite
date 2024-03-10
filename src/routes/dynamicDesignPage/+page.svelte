@@ -26,7 +26,7 @@
 				value: 3
 			},
 			size: {
-				value: { min: 2, max: 2 }
+				value: { min: 1, max: 1 }
 			}
 		}
 	};
@@ -51,11 +51,13 @@
 	<div class="scroll-div">
 		<div class="text-div">
 			<div class="text-block">
-				<h1>Design</h1>
+				<h1>DESIGN & DEVELOPMENT</h1>
 				<p>
-					Design is fucking awesome and if you don't pay me a ton of money for some services I'll
-					find out where you live and stab your eyes out. Look at the following projects while you
-					still can.
+					Lineworks, the space to find problem solving, creative exploration, visual translation,
+					concept development, design embodiment, prototyping and engineering. A flexible and
+					diverse composition of skills in arts, visualisation, design, programming and engineering,
+					capable of contribution to any point in your quest for bright ideas. The process is the
+					expertise.
 				</p>
 			</div>
 		</div>
@@ -64,7 +66,7 @@
 	{#each data.summaries as { slug, title, img_fname }}
 		<div class="scroll-div">
 			<a href="{base}/dynamicDesignPage/{slug}">
-				<img class="image" src="{base}/Design/{img_fname}.jpg" alt="asdf" />
+				<img class="image" src="{base}/DesignPage/{img_fname}.png" alt="asdf" />
 			</a>
 		</div>
 	{/each}
@@ -79,6 +81,10 @@
 </p> -->
 
 <style>
+	.text-block h1 {
+		/* margin-bottom: 0; */
+		font-weight: bold;
+	}
 	.scroll-container {
 		height: 100vh;
 		overflow-y: scroll;
@@ -97,20 +103,21 @@
 		justify-content: center;
 		align-items: center;
 		height: 60vh;
-		width: 40vh;
+		width: 80vh;
 	}
 	.text-block {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: left;
-		height: 60vh;
+		align-items: center;
+		text-align: center;
+		height: 80vh;
 	}
 	.image {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 60vh;
+		height: 70vh;
 		cursor: pointer;
 	}
 	:global(body) {
